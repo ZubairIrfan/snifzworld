@@ -1,0 +1,73 @@
+<div class="main-container" id="main">
+<app-header></app-header>
+<app-slider></app-slider>
+<div class="main-body">
+    <div class="welcome headings">
+      <span style="position:relative;">
+        
+      <span style="z-index:50;position:relative;">Welcome to DAZ Coders</span>
+      <div class="heading-design"></div>
+    </span>
+    </div>
+    <div>
+      <p  class="desc">
+          We are committed to make your day a little easier, more creative and flavorful. For this, Snifz is created which perfectly combines modern technology with cooking skills. Previously kitchen used to be occupied by series of mismatched free stand appliance, Now everyone is realizing that built-in units offer the flexibility to create a sleeker and more stylish kitchen, and at Snifz help you achieve that high end kitchen appliance ambition.</p>
+  
+          <p class="desc">We are also concern to protect environmental as much as you all, therefore our products are designed to be environmental friendly. More and more models are now equipped with energy Class A+++, which facilitates less power consumption, to prevent environmental damage.
+          Our goal is to guarantee appliances perform perfectly at all times. That’s why we employ stringent quality control and continuous l testing to ensure that all of Snifz appliances are reliable and dependable.
+      </p>
+    </div>
+    <div class="divider">
+
+    </div>
+    <div class="kitchen-appliances headings">
+        <span style="position:relative;">
+          
+        <span style="z-index:50;position:relative;">Kitchen Appliances</span>
+        <div class="heading-design"></div>
+      </span>
+      </div>
+      <div class="products row">
+        <div *ngFor="let product of kitchenAppliances" class="col-4 product">
+          <div class="shiny">
+            <img src="{{product.img}}" alt="">
+            <div class="show-off"></div>
+          </div>
+         
+          <div class="title">
+            {{product.title}}
+          </div>
+        </div>
+        
+      </div>
+      <div> &nbsp;
+          <div class="divider">
+
+            </div>
+      </div>
+        <div class="product-guide headings">
+            <span style="position:relative;">
+              
+            <span style="z-index:50;position:relative;">Product Guide</span>
+            <div class="heading-design"></div>
+          </span>
+          </div>
+          
+            <div class="row">
+            <div class="product-guide-options col-4" *ngFor="let option of productGuide; let i=index" >
+              <div class="col-2 icon">
+                <i class="fas" [ngClass]="{'fa-users':i==0,'fa-images':i==1,'fa-american-sign-language-interpreting':i==2,'fa-newspaper':i==3,'fa-thumbtack':i==4 ,'fa-phone':i==5 }" ></i>
+              </div>
+              <div class="detail col-10">
+                <div class="title">{{option.title}} </div>
+                <div class="description">{{option.desc}}</div>
+                <div class="learn">LEARN MORE</div>
+              </div>
+            </div>
+            <div style="clear:both;">
+
+            </div>
+          </div>
+          <app-footer></app-footer>
+  </div>
+</div>

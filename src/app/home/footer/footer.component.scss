@@ -1,0 +1,168 @@
+.footer {
+    background: rgb(0, 0, 0);
+    .come-over {
+        background: #ffc000;
+        padding: 5px 3%;
+    }
+    h2 {
+        font-size: 57px;
+        font-weight: bolder;
+    }
+    p {
+        margin-top: 21px;
+        font-size: 16px;
+    }
+    .let-work {
+        padding: 5px 3%;
+        h2 {
+            font-size: 57px;
+            font-weight: bolder;
+            color: #ffc000;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .fot-logo {
+        padding: 20px;
+        padding-top: 50px;
+        img {
+            width: 70%;
+        }
+    }
+    .icon-img {
+        background: url(http://brandstallion.com/wp-content/uploads/2016/06/social-sprite.png) no-repeat;
+        height: 41px;
+        -webkit-transition: background-position .3s;
+        transition: background-position .3s;
+        display: inline-block;
+    }
+    .icon-img2 {
+        background: url(http://brandstallion.com/wp-content/uploads/2016/03/google-icons-sprite.png) no-repeat;
+        height: 51px;
+        display: inline-block;
+        -webkit-transition: background-position .3s;
+        transition: background-position .3s;
+    }
+    .social-icons-box {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 50px;
+        .twit {
+            width: 65px;
+            background-position: -106px 0;
+            &:hover {
+                background-position: -106px -41px;
+            }
+        }
+        .fb {
+            background-position: 0 0;
+            width: 46px;
+            &:hover {
+                background-position: 0 -41px;
+            }
+        }
+        .insta {
+            background-position: -225px 0;
+            width: 42px;
+            &:hover {
+                background-position: -225px -41px;
+            }
+        }
+    }
+    .certification-icon-box {
+        width: 106%;
+        text-align: right;
+        overflow: hidden;
+        margin: 0;
+        padding-top: 45px;
+        .ga {
+            background-position: 0 0;
+            width: 107px;
+            &:hover {
+                background-position: 0 -51px;
+            }
+        }
+        .gad {
+            background-position: -96px 0;
+            width: 115px;
+            &:hover {
+                background-position: -96px -51px;
+            }
+        }
+        .ic {
+            background-position: -201px 0;
+            width: 128px;
+            &:hover {
+                background-position: -201px -51px;
+            }
+        }
+    }
+       
+    .bottom {
+        text-align: center;
+        color: #ffc000;
+        background: #222222;
+        padding: 0.8em;
+        font-weight: bold;
+        p {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+@media(max-width:640px) {
+    .footer {
+        .come-over, .let-work{
+h2{
+    font-size: 30px;
+}
+        }
+        .fot-logo {
+            width: 0%;
+            max-width: 0%;
+            flex: 0%;
+            padding: 0px !important;
+        }
+        .social-icons-box {
+            width: 50% !important;
+            max-width: 50%;
+            flex: 50%;
+        }
+        .certification-icon-box {
+            width: 50% !important;
+            max-width: 50%;
+            flex: 50%;
+        }
+
+    }
+}
+
+@media(max-width:400px) {
+    .footer {
+        .fot-logo {
+            width: 0%;
+            max-width: 0%;
+            flex: 0%;
+            padding: 0px !important;
+        }
+        .social-icons-box {
+            width: 100% !important;
+            max-width: 100%;
+            flex: 100%;
+        }
+        .certification-icon-box {
+            width: 100% !important;
+            max-width: 100%;
+            flex: 100%;
+        }
+    }
+}
+@media (max-width:320px) {
+    .come-over, .let-work{
+        h2{
+            font-size: 20px !important;
+        }
+}
+}

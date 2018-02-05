@@ -1,0 +1,173 @@
+@media(min-width:1190px){
+    .side-nav{
+        display: none;
+    }
+    .mobileview{
+        display: none;
+    }
+ul{
+    position: relative;
+    display: block;
+    z-index: 500;
+    margin-left: auto;
+    padding-right: 25px;
+    li{
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            background: rgba(0, 0, 0, 0.47);
+    color: #fff;
+    border-radius: 4px;
+        }
+
+    }
+    
+
+}
+.header{
+padding-top: 15px;
+height: 18vh;
+}
+img{
+    float: left;
+    height: 16vh;
+    width: 75%;
+    position: absolute;
+    right: 0;
+
+}
+.nav{
+    
+    margin-top: 7vh;
+    float: left;
+}
+.logo{
+    float: left;
+    position: relative;
+}
+li{
+    font-family:'Russo One', sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 900;
+    padding: 11px 8px !important;
+    color: #181818;
+    text-transform: uppercase;
+    transition: color 0.25s ease-out;
+}
+}
+
+@media(max-width:1189px){
+    .logo{
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center;
+        img{
+            position: relative;
+            float: none;
+            width: 25%;
+        }
+    }
+    .mobileview{
+        display: block;
+      z-index: 50;
+    background: rgb(88, 86, 86);
+    min-height: 20px;
+    font-size: 3vh;
+    color: white;
+    padding-left: 1%;
+
+
+    }
+    .header{
+    padding-top: 15px;
+    height: 25vh;
+    }
+    img{
+        float: left;
+        height: 16vh;
+        width: 75%;
+        position: absolute;
+        right: 0;
+    
+    }
+    .nav{
+        
+        display: none;
+
+    }
+    .logo{
+       height: 16vh;
+        position: relative;
+    }
+  .side-nav-bar{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+    .side-nav{
+background: #d2c035;
+height: 100%;
+width: 100%;
+display: inline-block;
+float: left;
+opacity: 1;
+z-index: 10;
+transition: 0.5s;
+animation: 0.5s slide ;
+padding: 0;
+z-index: 50;
+>div{
+    padding: 3vh 7%;
+    padding-right: 54px;
+    font-size: 12px;
+
+    line-height: 16px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 800;
+    border-bottom: 1px solid #907526;;
+    &:hover{
+        background: rgba(0, 0, 0, 0.25);
+    }
+}
+    }
+    .fixed{
+        position: fixed;
+    }
+    .blank-area{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        float: left;
+        height: inherit;
+        background: #000000;
+        opacity: 0.5;
+        width: 100%;
+        z-index: 10;
+   
+    }
+  }
+    }
+    @keyframes slide {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    @media(max-width:500px  ){
+        .logo{
+            width: 100% !important;
+            max-width: 100% !important;
+            text-align: center;
+            img{
+                position: relative;
+                float: none;
+            }
+        }
+    }

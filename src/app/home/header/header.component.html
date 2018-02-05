@@ -1,0 +1,29 @@
+<div class="header ">
+  <div class="col-3 logo" >
+    <span> <img  src="http://www.snifzworld.com/snifzworld_data/uploads/2017/06/19433740_1312750272157461_1869858674_n.png" alt="not found"></span></div>
+  <div class="col-9 nav">
+    <ul  >
+      <li>HOME</li>
+      <li>ABOUT US</li>
+      <li>KITCHEN APLIANCE</li>
+      <li>SHOWROOM</li>
+      <li>SNIFZ'S STUDIO</li>
+      <li>CONTACT US</li>
+    </ul>
+  </div>
+  <div class="mobileview" (click)="showSideNav()" style="cursor:pointer;">&#9776;</div>
+</div>
+<div *ngIf="sideBar"class="side-nav-bar">
+    
+  <div  class="side-nav col-4" > 
+      <div >HOME</div>
+      <div>ABOUT US</div>
+      <div>KITCHEN APLIANCE</div>
+      <div>SHOWROOM</div>
+      <div>SNIFZ'S STUDIO</div>
+      <div>CONTACT US</div>
+  </div>
+  <div class="blank-area col-12" (click)="hideSideNav()">
+  </div>
+  
+</div>
